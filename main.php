@@ -1,14 +1,16 @@
 <?php
 /**
  * Plugin Name: HEIC to JPEG
- * Description: Auto-convert HEIC media uploads to JPEG.
- * Author: Dr. Thomas Jansen
- * Version: 0.0.1
+ * Description: Convert HEIC images to JPEG format when upload to the Media Library.
+ * Author:      Crissy Field GmbH
+ * Author URI:  https://www.crissyfield.de/
+ * Version:     1.0.0
+ * Text Domain: heic-to-jpeg
  */
 
 defined( 'ABSPATH' ) || exit;
 
-// ...
+// Add HEIC mime type to mimes allowed for upload.
 function add_heic_upload_mime( $mimes, $user ) {
   $mimes['heic'] = 'image/heic';
   return $mimes;
@@ -16,7 +18,7 @@ function add_heic_upload_mime( $mimes, $user ) {
 
 add_filter( 'upload_mimes', 'add_heic_upload_mime', 10, 2 );
 
-// ...
+// Disable the client-side error message for HEIC media.
 function allow_heic_plupload_init( $setts ) {
   $setts['heic_upload_error'] = false;
   return $setts;
@@ -24,7 +26,7 @@ function allow_heic_plupload_init( $setts ) {
 
 add_filter( 'plupload_default_settings', 'allow_heic_plupload_init', 10, 1 );
 
-// ...
+// Convert HEIC to JPEG on upload.
 function resize_heic_upload_prefilter( $file ) {
   // Bail if no HEIC file
   if ( $file['type'] !== 'image/heic' ) {
