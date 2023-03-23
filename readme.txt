@@ -18,6 +18,11 @@ This plugin adds HEIC/HEIF support to Wordpress by transparently converting the 
 
 Note: ImageMagick 7.0.8-46 or above is required to be installed on the server.
 
+---
+
+[Iphone icon created by Smashicons](https://www.flaticon.com/free-icons/iphone) and [Photos icon created by Freepik](https://www.flaticon.com/free-icons/photo).
+
+
 == Installation ==
 
 1. Install **HEIC to JPEG** either via the WordPress.org plugin repository or by uploading the files to your server. (See instructions on [how to install a WordPress plugin](http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/)).
