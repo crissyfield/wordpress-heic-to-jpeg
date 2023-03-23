@@ -12,7 +12,14 @@ Convert HEIC images to JPEG format when upload to the Media Library.
 
 Convert HEIC images to JPEG format when upload to the Media Library.
 
-This requires ImageMagick 7.0.8-46 or above to be installed on the server.
+HEIC is the file format name Apple has chosen for the "High Efficiency Image Format" (HEIF) standard. HEIF
+offers better compression than JPEG, so it takes up less storage space, while maintaining the same visual
+quality. The format has been used by default since iOS 11, i.e. for images sent through the Messages app or
+when exporting.
+
+This plugin adds HEIC/HEIF support to Wordpress by transparently converting the uploaded image to JPEG.
+
+Note: ImageMagick 7.0.8-46 or above is required to be installed on the server.
 
 == Installation ==
 
