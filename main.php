@@ -4,7 +4,7 @@
  * Description: Convert HEIC images to JPEG format when upload to the Media Library.
  * Author:      Crissy Field GmbH
  * Author URI:  https://www.crissyfield.de/
- * Version:     1.0.0
+ * Version:     1.0.1
  * Text Domain: heic-to-jpeg
  */
 

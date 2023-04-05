@@ -2,8 +2,8 @@
 Contributors: crissyfieldgmbh
 Tags: media, image, heic, jpeg
 Requires at least: 6.0
-Tested up to: 6.1
-Stable tag: 1.0.0
+Tested up to: 6.2
+Stable tag: 1.0.1
 License: MIT License
 License URI: https://opensource.org/license/mit/
 Convert HEIC images to JPEG format when upload to the Media Library.
@@ -20,6 +20,10 @@ Note: ImageMagick 7.0.8-46 or above is required to be installed on the server.
 
 ---
 
+Check [HEIC Support](/plugins/heic-support/) for an alternative solution.
+
+---
+
 [Iphone icon created by Smashicons](https://www.flaticon.com/free-icons/iphone) and [Photos icon created by Freepik](https://www.flaticon.com/free-icons/photo).
 
 
@@ -29,6 +33,10 @@ Note: ImageMagick 7.0.8-46 or above is required to be installed on the server.
 2. Activate **HEIC to JPEG** on the Plugins page.
 
 == Changelog ==
+
+= 1.0.1 =
+* [Changed] Added link to HEIC Support in README.
+* [Changed] Tested up to Wordpress 6.2.
 
 = 1.0.0 =
 * [Added] Initial public version.
